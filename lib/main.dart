@@ -43,7 +43,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
 
   void _connectWebSocket() {
     _channel = WebSocketChannel.connect(
-      Uri.parse('ws://10.223.0.164:7000/ws'),
+      Uri.parse('ws://192.168.126.172:7000/ws'),
     );
     _channel.stream.listen((message) {
       setState(() {
