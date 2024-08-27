@@ -50,7 +50,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
 
   void _connectWebSocket() {
     _channel = WebSocketChannel.connect(
-      Uri.parse('ws://mentalhealthbot-jfea.onrender.com/ws'),
+      Uri.parse('wss://mentalhealthbot-jfea.onrender.com/ws'),
     );
     
     _channel.stream.listen(
