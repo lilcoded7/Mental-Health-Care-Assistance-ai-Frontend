@@ -62,17 +62,17 @@ class _ChatbotPageState extends State<ChatbotPage> {
         });
       },
       onError: (error) {
-        print('WebSocket error: $error'); // Debug: Print WebSocket error
+        print('WebSocket error: $error');
       },
       onDone: () {
-        print('WebSocket connection closed'); // Debug: Print WebSocket connection closed
+        print('WebSocket connection closed'); 
       },
     );
   }
 
   void _sendMessage() {
     if (_controller.text.isNotEmpty) {
-      print('Sending message: ${_controller.text}'); // Debug: Print message being sent
+      print('Sending message: ${_controller.text}');
       _channel.sink.add(_controller.text);
       setState(() {
         _messages.add("You: ${_controller.text}");
