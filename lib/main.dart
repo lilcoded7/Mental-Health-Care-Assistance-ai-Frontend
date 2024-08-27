@@ -55,7 +55,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
     
     _channel.stream.listen(
       (message) {
-        print('Received message: $message'); // Debug: Print received message
+        print('Received message: $message');
         setState(() {
           _messages.add(message);
           _isTyping = false;
