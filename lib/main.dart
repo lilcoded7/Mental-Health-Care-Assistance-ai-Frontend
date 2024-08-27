@@ -221,6 +221,10 @@ class _ChatbotPageState extends State<ChatbotPage> {
                       filled: true,
                       fillColor: Colors.grey[200],
                     ),
+                    textInputAction: TextInputAction.send, // Set action to 'send'
+                    onSubmitted: (text) {
+                      _sendMessage(); // Send message when Enter is pressed
+                    },
                   ),
                 ),
                 const SizedBox(width: 8),
